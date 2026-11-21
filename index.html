@@ -249,7 +249,7 @@
       <span><b>24.500</b> apresentações CMED</span>
       <span><b>1.222</b> posologias</span>
       <span><b>121</b> emergências</span>
-      <span><b>113</b> conversões</span>
+      <span><b>121</b> conversões</span>
       <span><b>1.500</b> diagnósticos</span>
     </div>
   </div>
@@ -748,7 +748,8 @@
       + fmtNum(m.produtos_cmed, 0) + ' produtos)</dd>'
       + '<dt>Posologias</dt><dd>' + fmtNum(m.posologias, 0) + '</dd>'
       + '<dt>Protocolos de emergência</dt><dd>' + fmtNum(m.emergencias, 0) + '</dd>'
-      + '<dt>Conversões numéricas</dt><dd>' + fmtNum(m.conversoes, 0) + '</dd>'
+      + '<dt>Conversões numéricas</dt><dd>' + fmtNum(CONV.length, 0)
+      + ' (das quais ' + fmtNum(m.conversoes, 0) + ' vinculadas a um fármaco)</dd>'
       + '<dt>Diagnósticos</dt><dd>' + fmtNum(m.diagnosticos, 0) + '</dd>'
       + '</dl></div>';
 
